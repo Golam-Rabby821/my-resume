@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume - Golam Rabby</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-xl shadow-lg max-w-4xl w-full text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">My Professional Resume</h1>
+        <p class="text-lg text-gray-600 mb-8">
+            Thank you for your interest! You can view or download my resume below.
+        </p>
+
+        <!-- Section for linking to the raw PDF (Recommended) -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">View / Download Resume (Recommended)</h2>
+            <p class="text-md text-gray-500 mb-6">
+                Click the button below to open my resume PDF directly in a new tab. This is the most reliable way to ensure it loads correctly.
+            </p>
+            <a 
+                href="https://raw.githubusercontent.com/Golam-Rabby821/my-resume/main/Golam_Rabby_Resume%20%20Frontend.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+            >
+                Open Resume PDF
+            </a>
+        </div>
+
+        <!-- Section for Embedding (with important notes) -->
+        <div class="border-t border-gray-200 pt-12 mt-12">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-4">Embedding Your Resume (Advanced)</h2>
+            <p class="text-md text-gray-500 mb-6">
+                Directly embedding PDFs from <code>raw.githubusercontent.com</code> or GitHub repository pages in an <code>&lt;iframe&gt;</code> will typically be blocked by GitHub's security policies (<code>X-Frame-Options</code>, <code>Content-Security-Policy</code>).
+            </p>
+            <p class="text-md text-gray-500 mb-6">
+                If you wish to embed your resume directly on your portfolio page, you have two primary options:
+            </p>
+            <ul class="list-disc list-inside text-left text-gray-600 mb-6 space-y-2">
+                <li>
+                    <strong>Host an HTML version on GitHub Pages:</strong> Convert your resume to an HTML file, push it to a GitHub repository, and enable GitHub Pages for that repository. You can then embed the GitHub Pages URL (e.g., <code>https://yourusername.github.io/your-resume-repo/</code>).
+                </li>
+                <li>
+                    <strong>Self-Host the PDF:</strong> Upload the PDF file directly to your own web server where your portfolio is hosted. This avoids cross-origin issues.
+                </li>
+            </ul>
+            <p class="text-md text-red-600 font-semibold mb-6">
+                The iframe below is commented out because it will likely fail if you use the raw GitHub URL.
+                Uncomment and replace the <code>src</code> with your GitHub Pages URL or a self-hosted PDF URL if you choose one of the advanced options.
+            </p>
+
+            <!-- Example of an iframe for embedding (commented out by default) -->
+            <!--
+            <div class="w-full h-96 bg-gray-200 rounded-lg overflow-hidden flex items-center justify-center text-gray-500 text-lg">
+                <iframe
+                    src="YOUR_GITHUB_PAGES_OR_SELF_HOSTED_PDF_URL_HERE" 
+                    class="w-full h-full"
+                    frameBorder="0"
+                    allowFullScreen
+                ></iframe>
+            </div>
+            -->
+            <p class="text-sm text-gray-400 mt-4">
+                (Note: The iframe above is a placeholder and requires a valid embeddable URL.)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
